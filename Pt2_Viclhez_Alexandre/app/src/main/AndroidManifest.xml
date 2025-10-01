@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pt2_Viclhez_Alexandre">
         <activity
+            android:name=".Massa"
+            android:exported="false" />
+        <activity
+            android:name=".Longitud"
+            android:exported="false" />
+        <activity
+            android:name=".Temperatura"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

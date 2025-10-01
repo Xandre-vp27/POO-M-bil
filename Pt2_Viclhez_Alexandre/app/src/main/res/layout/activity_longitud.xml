@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryContainer"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@color/primaryContainer"
+                android:contentDescription="Volver"
+                android:text="←Atrás"
+                android:textColor="@color/onPrimary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tituloLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conversor de Longitud"
+                android:textSize="24sp"
+                android:textColor="@color/onPrimary"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/inputLongitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce el valor"
+            android:inputType="numberDecimal"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/onPrimary"
+            android:textColorHint="@color/onPrimary"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <RadioGroup
+            android:id="@+id/groupConversionLong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primary"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbKmMi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kilómetro → Milla"
+                android:textColor="@color/onPrimary"/>
+
+            <RadioButton
+                android:id="@+id/rbMiKm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milla → Kilómetro"
+                android:textColor="@color/onPrimary"/>
+
+            <RadioButton
+                android:id="@+id/rbKmYd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kilómetro → Yarda"
+                android:textColor="@color/onPrimary"/>
+
+            <RadioButton
+                android:id="@+id/rbYdKm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yarda → Kilómetro"
+                android:textColor="@color/onPrimary"/>
+
+            <RadioButton
+                android:id="@+id/rbMiYd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milla → Yarda"
+                android:textColor="@color/onPrimary"/>
+
+            <RadioButton
+                android:id="@+id/rbYdMi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yarda → Milla"
+                android:textColor="@color/onPrimary"/>
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btnConvertirLong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convertir"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/onSecondary"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+            android:id="@+id/txtResultadoLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: "
+            android:textSize="20sp"
+            android:textColor="@color/onPrimary"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
