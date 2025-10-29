@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmaActivity">
+
+    <EditText
+        android:id="@+id/etHora"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Hora (0-23)"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/etMinuto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Minuto (0-59)"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/etHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etMensaje"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Mensaje de la alarma"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/etMinuto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnCrearAlarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Alarma"
+        app:layout_constraintTop_toBottomOf="@id/etMensaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

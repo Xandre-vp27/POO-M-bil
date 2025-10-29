@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pt3_Vilchez_Alexandre</string>
+    <string name="oncreate_label">onCreate(): </string>
+    <string name="onstart_label">onStart(): </string>
+    <string name="onrestart_label">onRestart(): </string>
+    <string name="onresume_label">onResume(): </string>
+    <string name="onpause_label">onPause(): </string>
+    <string name="onstop_label">onStop(): </string>
+    <string name="ondestroy_label">onDestroy(): </string>
+</resources>

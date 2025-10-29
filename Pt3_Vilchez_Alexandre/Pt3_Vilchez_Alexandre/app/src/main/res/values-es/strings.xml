@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pt3_Vilchez_Alexandre</string>
+    <string name="oncreate_label">alCrear(): </string>
+    <string name="onstart_label">alIniciar(): </string>
+    <string name="onrestart_label">alReiniciar(): </string>
+    <string name="onresume_label">alReanudar(): </string>
+    <string name="onpause_label">alPausar(): </string>
+    <string name="onstop_label">alDetener(): </string>
+    <string name="ondestroy_label">alDestruir(): </string>
+</resources>
