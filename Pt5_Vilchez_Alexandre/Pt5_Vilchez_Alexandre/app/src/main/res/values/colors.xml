@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales -->
+    <color name="primary">#1E88E5</color>           <!-- Azul moderno, para barras y botones -->
+    <color name="primaryDark">#1565C0</color>       <!-- Azul más oscuro, para status bar -->
+    <color name="accent">#FFC107</color>            <!-- Amarillo cálido, para resaltar botones/elementos -->
+
+    <!-- Colores adicionales -->
+    <color name="background">#FAFAFA</color>       <!-- Fondo general claro -->
+    <color name="surface">#FFFFFF</color>          <!-- Fondo de tarjetas y contenedores -->
+    <color name="textPrimary">#212121</color>      <!-- Texto principal oscuro -->
+    <color name="textSecondary">#757575</color>    <!-- Texto secundario/gris -->
+    <color name="buttonText">#FFFFFF</color>       <!-- Texto de botones sobre primary -->
+</resources>

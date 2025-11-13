@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Pt5_StarWars</string>
+    <string-array name="races">
+        <item>Ewok</item>
+        <item>Gen\'Dai</item>
+        <item>Genosià</item>
+        <item>Gorax</item>
+        <item>Gungan</item>
+        <item>Hutt</item>
+        <item>Jawa</item>
+        <item>Kel tor</item>
+        <item>Mandalorians</item>
+        <item>Massiff</item>
+        <item>Mon Calamari</item>
+        <item>Moradors de les sorres</item>
+        <item>Neimoidians</item>
+        <item>Porg</item>
+        <item>Quarren</item>
+        <item>Rakatan</item>
+        <item>Rancor</item>
+        <item>Teek</item>
+        <item>Sarlacc</item>
+        <item>Tauntaun</item>
+        <item>Ugnaught</item>
+        <item>Wampa</item>
+        <item>Weequay</item>
+        <item>Wookiee</item>
+        <item>Yuuzhan vong</item>
+        <item>Yuzzum</item>
+        <item>Zabrak</item>
+    </string-array>
+
+    <string-array name="peliculas">
+        <item>La amenaza fantasma</item>
+        <item>El ataque de los clones</item>
+        <item>La venganza de los Sith</item>
+        <item>Una nueva esperanza</item>
+        <item>El imperio contraataca</item>
+        <item>El retorno del Jedi</item>
+        <item>El despertar de la fuerza</item>
+        <item>Los últimos Jedi</item>
+        <item>El ascenso de Skywalker</item>
+    </string-array>
+
+</resources>
