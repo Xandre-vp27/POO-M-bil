@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ParkingVehiculos</string>
+    <string name="nombre">Nombre: </string>
+    <string name="apellido">Apellido: </string>
+    <string name="telefono">Telefono: </string>
+    <string name="marca">Marca: </string>
+    <string name="modelo">Modelo: </string>
+    <string name="matricula">Matrícula: </string>
+    <string name="insert">Insertar</string>
+    <string name="show">Mostrar</string>
+    <string name="si">Si</string>
+    <string name="no">No </string>
+    <string name="borrar">¿Seguro que quieres eliminar?</string>
+</resources>
