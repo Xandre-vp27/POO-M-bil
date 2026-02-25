@@ -23,11 +23,11 @@ public class EditorActivity extends AppCompatActivity {
         etContingut = findViewById(R.id.etContingut);
         btnGuardar = findViewById(R.id.btnGuardar);
 
-        // Usamos la URL que ya tienes configurada
+        // Url Firebase
         String url = "https://pt8-vilchez-alexandre-default-rtdb.firebaseio.com";
         dbRef = FirebaseDatabase.getInstance(url).getReference("notas");
 
-        // Comprobamos si venimos de un click para editar
+        // Comprobar si es editar o crear
         notaEditar = (Nota) getIntent().getSerializableExtra("nota");
         if (notaEditar != null) {
             etTitol.setText(notaEditar.getTitol());
