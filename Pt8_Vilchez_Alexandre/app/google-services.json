@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "567253442034",
+    "project_id": "pt8-vilchez-alexandre",
+    "storage_bucket": "pt8-vilchez-alexandre.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567253442034:android:b9a9f03f2a589ec784df6b",
+        "android_client_info": {
+          "package_name": "com.example.pt8_vilchez_alexandre"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6sKnZvKChiWWvvsXI1cQ5noJYRmT8bSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
