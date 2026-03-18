@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExempleNotificacions</string>
+    <string name="default_notification_channel_id">1</string>
+    <string name="default_notification_channel_name">General</string>
+    <string name="msg_subscrit">Subscripció Correcta</string>
+    <string name="msg_subscrit_error">Error al subscriures</string>
+    <string name="msg_token_fmt">InstanceID Token: %s</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="notification_permission_rationale">Aquesta aplicació necessita permís per enviar notificacions per mantenir-te informat sobre les novetats.</string>
+    <string name="ok">Acceptar</string>
+    <string name="no_thanks">No, gràcies</string>
+</resources>

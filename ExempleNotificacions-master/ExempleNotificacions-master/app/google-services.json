@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "668306580808",
+    "firebase_url": "https://fir-demo-c4788-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fir-demo-c4788",
+    "storage_bucket": "fir-demo-c4788.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668306580808:android:8f4da717d376fe8c983f7d",
+        "android_client_info": {
+          "package_name": "com.example.firebasedemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVKaiuXn2lQX0_c7d9xcYHpB8RgeFYEd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668306580808:android:23f26c97800496ae983f7d",
+        "android_client_info": {
+          "package_name": "net.vidalibarraquer.profe.notificacions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVKaiuXn2lQX0_c7d9xcYHpB8RgeFYEd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
