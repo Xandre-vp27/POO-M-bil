@@ -1,10 +1,11 @@
-package com.example.pt10_notificacions;
+package net.vidalibarraquer.profe.notificacions;
 
 import static android.Manifest.permission.POST_NOTIFICATIONS;
 
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -50,23 +51,12 @@ public class MainActivity extends AppCompatActivity {
                     channelName, NotificationManager.IMPORTANCE_LOW));
         }
 
-        // Ens subscrivim a un topic.
         Button subscribeButton = findViewById(R.id.btnSubscript);
         subscribeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseMessaging.getInstance().subscribeToTopic(getString(R.string.default_notification_channel_name))
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                String msg = getString(R.string.msg_subscrit);
-                                if (!task.isSuccessful()) {
-                                    msg = getString(R.string.msg_subscrit_error);
-                                }
-                                infoTextView.setText(msg);
-                                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                Intent intent = new Intent(MainActivity.this, SubscripcioActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -74,23 +64,8 @@ public class MainActivity extends AppCompatActivity {
         logTokenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseMessaging.getInstance().getToken()
-                        .addOnCompleteListener(new OnCompleteListener<String>() {
-                            @Override
-                            public void onComplete(@NonNull Task<String> task) {
-                                if (!task.isSuccessful()) {
-                                    Log.w(TAG, "Fetching FCM registration token failed", task.getException());
-                                    infoTextView.setText("Error al carregar el token");
-                                    return;
-                                }
-
-                                String token = task.getResult();
-                                String msg = getString(R.string.msg_token_fmt, token);
-                                infoTextView.setText(msg);
-                                Log.d(TAG, "token log: " + msg);
-                                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                Intent intent = new Intent(MainActivity.this, RegistreActivity.class);
+                startActivity(intent);
             }
         });
 

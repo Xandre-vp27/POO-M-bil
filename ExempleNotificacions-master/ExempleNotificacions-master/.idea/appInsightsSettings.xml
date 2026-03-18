@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="net.vidalibarraquer.profe.notificacions" />
-                  <option name="mobileSdkAppId" value="1:668306580808:android:23f26c97800496ae983f7d" />
-                  <option name="projectId" value="fir-demo-c4788" />
-                  <option name="projectNumber" value="668306580808" />
+                  <option name="mobileSdkAppId" value="1:430134893222:android:be893c398ec1142e30f267" />
+                  <option name="projectId" value="practicanotificacionesalex" />
+                  <option name="projectNumber" value="430134893222" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

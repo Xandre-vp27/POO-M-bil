@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "net.vidalibarraquer.profe.notificacions"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "net.vidalibarraquer.profe.notificacions"
         minSdk = 30
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
