@@ -24,6 +24,7 @@ public class GameScreen implements Screen {
     private float score;
     private int lives = 3;
     private Sound hitSound;
+    private Texture backgroundTexture;
 
     // Elementos de UI
     private Label scoreLabel;
@@ -39,6 +40,9 @@ public class GameScreen implements Screen {
     public void show() {
         Gdx.input.setInputProcessor(stage);
 
+        // Cargar fondo
+        backgroundTexture = game.manager.get("landscape.png", Texture.class);
+
         // Crear al T-Rex
         Texture trexTexture = game.manager.get("t-rex.png", Texture.class);
         trex = new TRexActor(trexTexture);
@@ -46,6 +50,7 @@ public class GameScreen implements Screen {
         stage.addActor(trex);
 
         hitSound = game.manager.get("hit.wav", Sound.class);
+// ... resto del método show()
 
         // Configurar UI con Labels
         Label.LabelStyle labelStyle = new Label.LabelStyle();
@@ -67,6 +72,11 @@ public class GameScreen implements Screen {
     public void render(float delta) {
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+        // Dibujar el fondo escalado a toda la pantalla
+        game.batch.begin();
+        game.batch.draw(backgroundTexture, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        game.batch.end();
 
         // Actualizar puntuación (segundos sobrevividos)
         score += delta;

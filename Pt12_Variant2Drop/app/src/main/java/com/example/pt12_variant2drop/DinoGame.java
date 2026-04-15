@@ -3,6 +3,7 @@ package com.example.pt12_variant2drop;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -25,9 +26,8 @@ public class DinoGame extends Game {
         // Cargar texturas y sonidos
         manager.load("t-rex.png", Texture.class);
         manager.load("meteor.png", Texture.class);
+        manager.load("landscape.png", Texture.class);
         manager.load("hit.wav", Sound.class);
-        
-        // Carga inicial (la SplashScreen esperará a que termine)
         
         // Configuración de la fuente
         setupFont();
@@ -37,16 +37,32 @@ public class DinoGame extends Game {
     }
 
     private void setupFont() {
-        if (Gdx.files.internal("font.ttf").exists()) {
-            FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("font.ttf"));
+        // Intentamos cargar una fuente personalizada 'pixel.ttf' (estilo retro videojuego)
+        // Si no existe, buscamos 'font.ttf'
+        String fontPath = "pixel.ttf";
+        if (!Gdx.files.internal(fontPath).exists()) {
+            fontPath = "font.ttf";
+        }
+
+        if (Gdx.files.internal(fontPath).exists()) {
+            FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal(fontPath));
             FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
-            parameter.size = 48; // Aumentado de 24 a 48
+            
+            parameter.size = 56; // Un poco más grande para que destaque
+            parameter.color = Color.WHITE;
+            parameter.borderWidth = 3; // Añadimos un borde negro para mejor legibilidad
+            parameter.borderColor = Color.BLACK;
+            parameter.shadowOffsetX = 3; // Sombra para darle estilo retro
+            parameter.shadowOffsetY = 3;
+            parameter.shadowColor = new Color(0, 0, 0, 0.5f);
+            
             font = generator.generateFont(parameter);
             generator.dispose();
         } else {
-            // Fuente por defecto si no existe el archivo .ttf
+            // Fuente por defecto si no hay archivos .ttf, pero con estilo mejorado
             font = new BitmapFont();
-            font.getData().setScale(3f); // Escalar la fuente por defecto para que se vea más grande
+            font.getData().setScale(3.5f);
+            font.setColor(Color.YELLOW); // Color amarillo para que destaque más que el blanco simple
         }
     }
 
